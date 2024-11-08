@@ -89,6 +89,7 @@ class GitAutoDeploy(object):
                 GitWrapper.init(repo_config)
             else:
                 GitWrapper.clone(repo_config)
+                GitWrapper.deploy(repo_config)
 
     def ssh_key_scan(self):
         import re
